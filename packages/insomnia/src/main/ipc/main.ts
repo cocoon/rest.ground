@@ -84,10 +84,10 @@ export function registerMainHandlers() {
   });
 
   ipcMain.on('trackSegmentEvent', (_, options: { event: SegmentEvent; properties?: Record<string, unknown> }): void => {
-    trackSegmentEvent(options.event, options.properties);
+    //trackSegmentEvent(options.event, options.properties);
   });
   ipcMain.on('trackPageView', (_, options: { name: string }): void => {
-    trackPageView(options.name);
+    //trackPageView(options.name);
   });
 
   ipcMain.handle('installPlugin', (_, lookupName: string) => {
